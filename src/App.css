@@ -85,7 +85,7 @@ a {
   margin: 15px 0;
 }
 
-button {
+.btn {
   color: #fff;
   background: orangered;
   font-size: 12px;
@@ -101,7 +101,7 @@ button {
   cursor: pointer;
 }
 
-button :active {
+.btn :active {
   transform: scale(0.9);
 }
 
@@ -202,7 +202,18 @@ button :active {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 500px) {
+.social-container .social-handle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: black;
+  background: #eee;
+  border: 2px solid gray;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 800px) {
   .container {
     height: 1000px;
     width: 360px;

@@ -16,9 +16,9 @@ function App() {
           <h1>Create Account</h1>
           <div className="social-container">
             {/* <!-- Social handles icons --> */}
-            <BsFacebook />
-            <FaGooglePlusG />
-            <BsLinkedin />
+            <button className="social-handle"> <BsFacebook /></button>
+            <button className="social-handle"> <FaGooglePlusG /></button>
+            <button className="social-handle"> <BsLinkedin /></button>
             {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
 
               <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
@@ -33,7 +33,7 @@ function App() {
             placeholder="Password"
             required=""
           />
-          <button>Sign Up</button>
+          <button className="btn">Sign Up</button>
         </form>
       </div>
       <div className="sign-in">
@@ -41,9 +41,9 @@ function App() {
           <h1>Sign In</h1>
           <div className="social-container">
             {/* <!-- Social handles icons --> */}
-            <BsFacebook />
-            <FaGooglePlusG />
-            <BsLinkedin />
+            <button className="social-handle"> <BsFacebook /></button>
+            <button className="social-handle"> <FaGooglePlusG /></button>
+            <button className="social-handle"> <BsLinkedin /></button>
             {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
               <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
               <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a> */}
@@ -57,7 +57,7 @@ function App() {
             required=""
           />
           <a href="/">Forgot Password?</a>
-          <button>Sign In</button>
+          <button className="btn">Sign In</button>
         </form>
       </div>
       <div className="overlay-container">
@@ -67,14 +67,14 @@ function App() {
             <p>
               To keep connected with us please login with your personal info
             </p>
-            <button id="signIn" onClick={() => setIsActive(!isActive)}>
+            <button className="btn" id="signIn" onClick={() => setIsActive(!isActive)}>
               Sign In
             </button>
           </div>
           <div className="overlay-right">
             <h1>Hello, Friend</h1>
             <p>Enter your personal details and start your journey</p>
-            <button id="signUp" onClick={() => setIsActive(!isActive)}>
+            <button className="btn" id="signUp" onClick={() => setIsActive(!isActive)}>
               Sign Up
             </button>
           </div>
