@@ -6,6 +6,9 @@ import { FaGooglePlusG } from "react-icons/fa";
 function App() {
   const [isActive, setIsActive] = useState(false);
 
+  const handleFacebook = () => {};
+  const handelGoogle = () => {};
+  const handleLinkedIn = () => {};
   return (
     <div
       className={`container ${isActive ? "right-panel-active" : ""}`}
@@ -16,9 +19,15 @@ function App() {
           <h1>Create Account</h1>
           <div className="social-container">
             {/* <!-- Social handles icons --> */}
-            <BsFacebook />
-            <FaGooglePlusG />
-            <BsLinkedin />
+            <button onClick={handleFacebook}>
+              <BsFacebook />
+            </button>
+            <button onClick={handelGoogle}>
+              <FaGooglePlusG />
+            </button>
+            <button onClick={handleLinkedIn}>
+              <BsLinkedin />
+            </button>
             {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
 
               <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
@@ -41,9 +50,15 @@ function App() {
           <h1>Sign In</h1>
           <div className="social-container">
             {/* <!-- Social handles icons --> */}
-            <BsFacebook />
-            <FaGooglePlusG />
-            <BsLinkedin />
+            <button onClick={handelGoogle}>
+              <BsFacebook />
+            </button>
+            <button onClick={handelGoogle}>
+              <FaGooglePlusG />
+            </button>
+            <button onClick={handleLinkedIn}>
+              <BsLinkedin />
+            </button>
             {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
               <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
               <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a> */}

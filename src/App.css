@@ -223,11 +223,13 @@ button :active {
     opacity: 1;
     z-index: 50;
   }
+
   .overlay-container {
     left: 0;
     top: 50%;
     width: 100%;
   }
+
   .overlay-left,
   .overlay-right {
     height: 50%;
@@ -235,7 +237,6 @@ button :active {
     transform: translateY(0);
   }
 
-  
 
   .overlay {
     position: relative;
